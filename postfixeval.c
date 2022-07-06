@@ -24,10 +24,10 @@ int main()
 	int n1,n2,n3,num;
 	printf("Enter the expression :");
 	scanf("%s",exp);
-	e=exp;
+	g=exp;
 	while (*g !='\0')
 	{
-		if (isdigit(*e))
+		if (isdigit(*g))
 		{
 			num=*g -48;
 			push(num);
@@ -53,7 +53,7 @@ int main()
 			}
 			push (n3);
 		}
-		e++;
+		g++;
 	}
 	printf("Result %s is:%d\n\n",exp,pop());
 	return 0;
